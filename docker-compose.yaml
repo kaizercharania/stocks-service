@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  setup:
+    build: .
+    image: local
+    command: bash /apps/setup.sh
+  web:
+    image: local
+    ports:
+    - 8080:8080
